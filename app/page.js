@@ -9,7 +9,9 @@ export default function Home() {
       fetch(`https://arduino-esp32.vercel.app/api/imageCapture`)
         .then((res) => res.json())
         .then((data) => {
-          setEncodedImage(`data:image/png;base64,${data.Image}`);
+          if (data.Image != "") {
+            setEncodedImage(`data:image/png;base64,${data.Image}`);
+          }
         });
     }, 100);
   });
