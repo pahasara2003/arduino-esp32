@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Image, Skeleton } from "@nextui-org/react";
-
+import { Image } from "@nextui-org/react";
 export default function Home() {
   const [encodedImage, setEncodedImage] = useState("");
 
@@ -17,7 +16,7 @@ export default function Home() {
 
   return (
     <div className="h-screen flex items-center justify-center">
-      <Image isLoading={false} width={500} height={400} src={encodedImage} />
+      <Image width={500} height={400} src={encodedImage} />
     </div>
   );
 }
