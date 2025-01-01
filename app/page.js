@@ -13,7 +13,7 @@ export default function Home() {
             setEncodedImage(`data:image/png;base64,${data.Image}`);
           }
         });
-    }, 100);
+    }, 1000);
   });
 
   return (
