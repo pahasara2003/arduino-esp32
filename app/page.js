@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     setInterval(async () => {
-      fetch(`http://localhost:3001/api/imageCapture`)
+      fetch(`https://arduino-esp32.vercel.app/api/imageCapture`)
         .then((res) => res.json())
         .then((data) => {
           setEncodedImage(`data:image/png;base64,${data.Image}`);
