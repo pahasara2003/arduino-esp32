@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="h-screen flex items-center justify-center">
-      <Image width={500} height={400} src={encodedImage} />
+      <Image isLoading={false} width={500} height={400} src={encodedImage} />
     </div>
   );
 }
